@@ -1,11 +1,12 @@
 from peewee import PostgresqlDatabase
+from core.config import settings
 
 db = PostgresqlDatabase(
     'blog_db',
-    user="mubassir",
-    password='muba12',
-    host='localhost',
-    port=5435
+    user=settings.POSTGRES_USER,
+    password=settings.POSTGRES_PASSWORD,
+    host=settings.POSTGRES_SERVER,
+    port=settings.POSTGRES_PORT
     )
 
 def get_db():
