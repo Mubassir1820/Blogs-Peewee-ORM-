@@ -1,0 +1,7 @@
+fastapi==0.115.6
+uvicorn==0.32.1
+peewee==3.17.8
+psycopg2==2.9.6
+python-dotenv==1.0.0
+alembic==1.11.1
+peewee-migrations==0.3.32
